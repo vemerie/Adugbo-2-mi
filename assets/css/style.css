@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Fredoka+One|Open+Sans:300");
+/*All Variables*/
+* {
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+  /*background: #fff;*/
+  transition: all .2s ease; }
+
+.img--center {
+  text-align: -webkit-center;
+  display: block; }
+
+.navbar-default {
+  background-color: #ffffff !important;
+  border-color: #ffffff !important; }
+
+.navbar li > a {
+  font-size: 13px; }
+
+.col-md-6 {
+  padding: 22px 5%; }
+
+.body__auth ul.nav .nav-pills.nav-right {
+  float: right; }
+.body__auth ul.nav li > a {
+  color: #757575 !important; }
+.body__auth .well {
+  background: #fff;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  display: block;
+  border: none;
+  padding: 46px;
+  margin-top: 2vw; }
+  .body__auth .well img {
+    width: 87px; }
+  .body__auth .well h3.g__gray {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.3333;
+    margin-top: 3%; }
+    .body__auth .well h3.g__gray small {
+      color: #333 !important; }
+  .body__auth .well .forgot__auth a {
+    font-weight: 700;
+    color: #48adf5; }
+  .body__auth .well .learn__more--section {
+    color: #757575;
+    margin-top: 8%; }
+    .body__auth .well .learn__more--section b {
+      color: #48adf5; }
+  .body__auth .well p.next__center {
+    font-weight: 700;
+    color: #1a73e8;
+    font-size: 15px;
+    margin-top: 12%; }
+    .body__auth .well p.next__center button {
+      float: right;
+      background: #48adf5;
+      border: none;
+      margin-top: -7px;
+      font-weight: 600;
+      letter-spacing: 0.4px;
+      padding: 8px 30px; }
+.body__auth input {
+  width: 100%;
+  display: block;
+  border: none;
+  padding: 17px 0 12px;
+  border-bottom: solid 1px #48adf5;
+  -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, #48adf5 4%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #48adf5 4%);
+  background-position: -200px 0;
+  background-size: 200px 100%;
+  background-repeat: no-repeat;
+  color: #000;
+  margin-bottom: 9%; }
+.body__auth input:focus, .body__auth input:valid {
+  box-shadow: none;
+  outline: none;
+  background-size: 100% 102%;
+  background-position: 0 0; }
+.body__auth input::-webkit-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+.body__auth input:focus::-webkit-input-placeholder, .body__auth input:valid::-webkit-input-placeholder {
+  color: #48adf5;
+  font-size: 11px;
+  -webkit-transform: translateY(-20px);
+  transform: translateY(-20px);
+  visibility: visible !important; }
+
+.body__post ul.nav .nav-pills.nav-right {
+  float: right; }
+.body__post ul.nav li > a {
+  color: #757575 !important;
+  font-size: 12px; }
+.body__post .well {
+  background: #fff;
+  border: none;
+  box-shadow: none;
+  margin-top: 5vw; }
+.body__post .well.down__well {
+  border: 1px solid #d4d4d4;
+  padding: 25px 19px 19px; }
+  .body__post .well.down__well p {
+    color: #9a9a9a;
+    font-weight: 600;
+    font-size: 15px; }
+  .body__post .well.down__well button:nth-of-type(1) {
+    border: 1px solid #5168ea;
+    background: transparent; }
+  .body__post .well.down__well button {
+    float: right;
+    margin-left: 10px;
+    border: none;
+    background: #5168ea;
+    margin-top: -8px;
+    padding: 8px 31px;
+    font-weight: 600; }
+.body__post span.upvote__button {
+  /* position: absolute; */
+  float: left;
+  font-size: 11px;
+  font-weight: 900;
+  color: #444444;
+  margin-left: -7%; }
+  .body__post span.upvote__button i {
+    font-size: 16px;
+    margin-left: 3px;
+    color: #c5c5c5 !important; }
+.body__post .font--samll {
+  font-size: 12px; }
+.body__post .img-center.padd_up {
+  padding: 7px 47px; }
+.body__post h3 {
+  font-weight: 600;
+  font-size: 23px;
+  margin-bottom: 3px; }
+.body__post p.profile--space small {
+  margin-left: 2%;
+  color: #a0a0a0;
+  font-size: 11px; }
+.body__post p.profile--space img {
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  margin-right: 5px; }
+
+.body__upload {
+  background: #f1f1f1; }
+  .body__upload .img--center img {
+    cursor: pointer; }
+  .body__upload .img--center input {
+    position: absolute;
+    margin-top: -13%;
+    width: 25%;
+    margin-left: 20%;
+    background: transparent;
+    height: 72px;
+    opacity: 0;
+    cursor: pointer; }
+  .body__upload .well {
+    background: #fff;
+    border: none;
+    box-shadow: none; }
+  .body__upload .upload__well {
+    padding: 72px !important;
+    margin-top: 5vw; }
+  .body__upload .well.text-center.upload__well p {
+    color: #7b7b7b;
+    font-size: 13px; }
+  .body__upload .well.text-center.upload__well h3 {
+    font-size: 19px;
+    font-weight: 400;
+    margin-bottom: 2%;
+    color: #7b7b7b; }
+  .body__upload .instructions p b {
+    color: #3e3e3e;
+    display: block;
+    margin-bottom: -2%; }
+  .body__upload .instructions p {
+    font-size: 12px;
+    color: #7b7b8b; }
+
+.body__allTask {
+  background-color: #f5f5f5ab; }
+  .body__allTask .heading_video {
+    font-size: 17px;
+    margin: 1.4% 0%; }
+    .body__allTask .heading_video button {
+      float: right;
+      background: red;
+      border: none;
+      border-radius: 1px; }
+  .body__allTask section.market__fund .well {
+    padding: 0 !important;
+    border-radius: 1px;
+    box-shadow: none;
+    border: none; }
+  .body__allTask section.market__fund .col-md-2 {
+    padding: 2px; }
+  .body__allTask section.market__fund {
+    padding: 10px 12.3%; }
+  .body__allTask .well {
+    background: transparent !important; }
+    .body__allTask .well p {
+      margin-bottom: 0;
+      font-size: 12px;
+      color: #a2a2a2; }
+    .body__allTask .well h3 {
+      font-size: 14px; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Fredoka+One|Open+Sans:300');
+
+/*All Variables*/
+
+$platform_font: 'Roboto',
+sans-serif;
+
+$platformcolor : #fff;
+$platformSecondary: #48adf5;
+
+// =======================
+// Start Global Declearatives
+* {
+  padding: 0px;
+  font-family: $platform_font;
+  margin: 0px;
+  /*background: #fff;*/
+  transition: all .2s ease;
+}
+.img--center {
+  text-align: -webkit-center;
+  display: block;
+}
+.navbar-default {
+    background-color: #ffffff !important;
+    border-color: #ffffff !important;
+}
+.navbar li > a{
+   font-size:13px;
+}
+ .col-md-6 {
+    	padding: 22px 5%;
+    }
+
+// End Global Declearatives
+// ===================
+
+
+
+// ALL EXTENDED
+
+// end Extended
+
+
+// Authentication Page
+
+.body__auth{
+	ul.nav{
+		.nav-pills.nav-right {
+		    float: right;
+		}
+		li > a{
+			 color: #757575 !important;
+		} 
+	}
+    .well{
+      background: #fff;
+      -webkit-border-radius: 8px;
+      border-radius: 8px;
+      -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+      box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+      display: block;
+      border:none;
+
+	    padding: 46px;
+	    margin-top: 2vw;
+      img{
+        width:87px;
+      }
+      h3.g__gray{
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 1.3333;
+        margin-top:3%;
+        small{
+        	color: #333 !important;
+        }
+        // color:red;
+      }
+      .forgot__auth a{
+        // color: #1a73e8;
+        font-weight: 700;
+        color:$platformSecondary;
+      }
+      .learn__more--section{
+        color: #757575;
+
+   		 margin-top: 8%;
+        b{
+        	color:$platformSecondary;
+        }
+      }
+      p.next__center{
+      	font-weight: 700;
+	    color: #1a73e8;
+	    font-size:15px;
+	    margin-top: 12%;
+      	 button {
+		    float: right;
+		    background: #48adf5;
+		    border: none;
+		    margin-top: -7px;
+		    font-weight: 600;
+		    letter-spacing: 0.4px;
+		    padding: 8px 30px;
+		 }
+      }
+
+    }
+   
+    input {
+	    // margin: 40px 25px;
+	    width: 100%;
+	    display: block;
+	    border: none;
+	    padding: 17px 0 12px;
+	    border-bottom: solid 1px $platformSecondary;
+	    -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+	    transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+	    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, $platformSecondary 4%);
+	    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, $platformSecondary 4%);
+	    background-position: -200px 0;
+	    background-size: 200px 100%;
+	    background-repeat: no-repeat;
+	    color: #000;
+	    margin-bottom:9%;
+	  }
+
+	  input:focus, input:valid {
+	   box-shadow: none;
+	   outline: none;
+	       background-size: 100% 102%;
+	   background-position: 0 0;
+	  }
+
+	  input::-webkit-input-placeholder {
+	   font-family: $platform_font;
+	   -webkit-transition: all 0.3s ease-in-out;
+	   transition: all 0.3s ease-in-out;
+	  }
+
+	  input:focus::-webkit-input-placeholder, input:valid::-webkit-input-placeholder {
+	   color: $platformSecondary;
+	   font-size: 11px;
+	   -webkit-transform: translateY(-20px);
+	   transform: translateY(-20px);
+	   visibility: visible !important;
+	  }
+}
+
+.body__post{
+	ul.nav{
+		.nav-pills.nav-right {
+		    float: right;
+		}
+		li > a{
+			color: #757575 !important;
+    		font-size: 12px;
+		} 
+	}
+	.well {
+	    background: #fff;
+	    border: none;
+	    box-shadow: none;
+	    margin-top: 5vw;
+
+	}
+	.well.down__well {
+	    border: 1px solid #d4d4d4;
+	    padding: 25px 19px 19px;
+	    // position: fixed;
+	    // width: 49%;
+	    // bottom: -22px;
+	    p {
+		    color: #9a9a9a;
+		    font-weight: 600;
+		    font-size: 15px;
+		}
+		 button:nth-of-type(1) {
+		    border: 1px solid #5168ea;
+		    background: transparent;
+		}
+		button {
+		    float: right;
+		    margin-left: 10px;
+		    border: none;
+		    background: #5168ea;
+		    margin-top: -8px;
+		    padding: 8px 31px;
+		    font-weight: 600;
+		}
+	}
+	span.upvote__button {
+	    /* position: absolute; */
+	    float: left;
+	    font-size: 11px;
+	    font-weight: 900;
+	    color: #444444;
+	    margin-left: -7%; 
+	     i {
+		    font-size: 16px;
+		    margin-left: 3px;
+		    color: #c5c5c5 !important;
+		}
+	}
+	.font--samll{
+		font-size:12px;
+	}
+	.img-center.padd_up {
+	    padding: 7px 47px;
+	}
+	h3{
+		font-weight: 600;
+	    font-size: 23px;
+	    margin-bottom: 3px;
+
+	}
+	p.profile--space {
+		small {
+		    margin-left: 2%;
+		    color: #a0a0a0;
+		    font-size: 11px;
+		}
+		img {
+		    height: 26px;
+		    width: 26px;
+		    border-radius: 50%;
+		    margin-right: 5px;
+		}	
+	} 
+}
+.body__upload{
+	background:#f1f1f1;
+	.img--center{
+		img{
+			cursor:pointer;
+		}
+		input{
+			position: absolute;
+		    margin-top: -13%;
+		    width: 25%;
+		    margin-left: 20%;
+		    background: transparent;
+		    height: 72px;
+		    opacity: 0;
+		    cursor:pointer;
+		}
+	}
+	.well{
+		background:#fff;
+		border:none;
+		box-shadow:none;
+	}
+	.upload__well{
+		padding: 72px !important;
+   		margin-top: 5vw;
+	}
+	.well.text-center.upload__well p {
+	    color: #7b7b7b;
+	    font-size: 13px;
+	}
+	.well.text-center.upload__well h3 {
+	    font-size: 19px;
+	    font-weight: 400;
+	    margin-bottom: 2%;
+	    color: #7b7b7b;
+	}
+	.instructions{
+		 p b {
+		    color: #3e3e3e;
+		    display: block;
+		    margin-bottom: -2%;
+		}
+		 p {
+		    font-size: 12px;
+		    color: #7b7b8b;
+		}
+	}
+}
+.body__allTask{
+	    background-color: #f5f5f5ab;
+	    .heading_video{
+	    	font-size: 17px;
+    		margin: 1.4% 0%;
+    		button{
+    			float: right;
+			    background: red;
+			    border: none;
+			    border-radius: 1px;
+
+    		}
+	    }
+	section.market__fund .well {
+	    padding: 0 !important;
+	    border-radius: 1px;
+	    box-shadow: none;
+	    border: none;
+	}
+	section.market__fund .col-md-2 {
+	    padding: 2px;
+	}
+	section.market__fund {
+	    padding: 10px 12.3%;
+	}
+	.well{
+		background:transparent !important;
+		p {
+		    margin-bottom: 0;
+		    font-size: 12px;
+		    color: #a2a2a2;
+		}
+		h3 {
+		    font-size: 14px;
+		}
+	}
+}

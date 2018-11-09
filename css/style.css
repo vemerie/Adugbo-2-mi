@@ -1,0 +1,207 @@
+*{
+}
+/* used frquently*/
+.margin_l{
+    margin-left: 10px;
+}
+.float_r{
+    float:right;
+}
+.d-block{display:block;}
+.test-color{
+    background-color: green;
+}
+.bold{
+    font-weight: bolder;
+}
+.bolds{font-weight: bold;}
+
+.text-dark{
+    color:black;
+}
+.small-icons {
+    margin-top:0px;
+font-size: 24px;
+height: 30px;
+width: 30px;
+line-height: 45px;
+color: #fff;
+margin-right: 10px;
+text-align: center;
+display: inline-block;
+border-radius: 100%;
+margin-bottom: 10px;
+}
+
+.blue__text{
+    color: rgb(111, 138, 197);
+}
+
+/**/
+
+
+
+
+
+
+.sec{
+    max-height:300px;
+}
+.subs{text-align: center;
+    color:white;
+
+}
+
+
+.nav-small{
+    padding: 2px;
+}
+
+/*Rtyhr-section*/
+.Rtyhr-body{
+    font-weight: bold;
+}
+
+.margin-left{
+    margin-left:20px;
+}
+
+.Rtyhr-body dt{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.Rtyhr-body dd{
+    font-weight: bold;
+    font-size: 13px;
+}
+/*Rtyhr-section*/
+
+/*Rrt-section*/
+
+.dashboard button{
+    float: right;
+    background: red;
+    border: none;
+    border-radius: 1px;
+}
+
+.dashboard{
+    background-color: #f5f5f5ab;
+}
+.dashboard .heading_video{
+        font-size: 17px;
+        margin: 1.4% 0%;
+}
+
+#side-dashboard{
+    max-height:800px;
+}
+
+#side-dashboard h2 h4 .btn form{
+    margin-bottom:10px;
+}
+.dashboard-nav{
+    color: rgb(14, 150, 200);
+    padding-left:100px;
+    margin:0px 0px;
+    box-shadow: 2px 3px 7px rgba(75, 55, 167, 0.5);
+    background-color: unset;
+    border: unset;
+
+}
+
+.dashboard-nav a{
+color: rgb(111, 138, 197);
+
+}
+#side-dashboard .card-body{
+    padding: 5px auto;
+    margin: 5px auto;
+
+}
+.btn-group .btn{
+    color:white;
+    margin:10px;
+
+}
+/*Rrt-section*/
+
+
+/*nav  body*/
+
+
+.body__allTask #myNavbar a{
+    color: rgb(111, 138, 197);
+}
+
+.body__allTask .dropleft .dropdown-menu a .blue-text{
+    color: rgb(111, 138, 197);
+}
+
+.body__allTask .dropleft .dropdown-menu  a{
+    font-size:17px;
+}
+
+.body__allTask .dropleft button{
+    border-radius:5px;
+    color:white;
+    background-color:red;
+    margin-bottom: 10px;
+    box-shadow: 2px 3px 7px rgba(44, 42, 41, 0.5);
+}
+.body__allTask .dropleft i{
+    color:white;
+}
+
+#icon-nava{
+    background-color: unset;
+    border: unset;
+}
+/*add body */
+/*add from */
+
+.body__allTask{
+    background-color: #f5f5f5ab;
+}
+.body__allTask .heading_video{
+        font-size: 17px;
+        margin: 1.4% 0%;
+}
+.body__allTask  button {
+            float: right;
+            background-color: red;
+            border: none;
+            border-radius: 1px;
+    }
+
+section.market__fund .well {
+    padding: 0;
+    border-radius: 1px;
+    box-shadow: none;
+    border: none;
+}
+section.market__fund .col-md-2 {
+    padding: 2px;
+}
+
+section.market__fund {
+    padding: 10px 5%;
+}
+
+.well{
+    background:transparent;
+    }
+
+.well   p {
+        margin-bottom: 0;
+        font-size: 12px;
+        color: #a2a2a2;
+    }
+
+.well  h3 {
+        font-size: 14px;
+    }
+
+/*footer*/
+

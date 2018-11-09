@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>ADUGBO MI</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/leaflet.css" />
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/animate.css">
+</head>
+
+<body class="grey lighten-3  dashboard_all" >
+        
+<div class="container-fluid">
+<div class="row">
+
+   <!--side section-->
+   <div class="col-md-3" style="background-color:rgb(78, 119, 201);" id="side-dashboard" style="text-align:center; min-height:700px;">
+        <div class="well" style="background-color:rgb(51, 85, 155); min-height:650px; margin-top:20px;" >
+                <div class="well-header">
+                        <span class="pull-right"><a class="" id="close-icon"><i class="fa fa-times fa-lg white-text icon-small"></a></i></span>
+                 </div>
+
+                    <div class="banner" style="width:250px; margin:30px auto 10px;">
+                        <a class="" href="index.html" target="_blank">
+                            <img src="img/Banner.PNG" style="margin:15px auto 10px;">
+                        </a>
+                    </div>
+                    <h2 class="d-block"style="text-align:center;" ><a href="" class="white-text">My account</a></h2>
+                    <h4 class="d-block"style="text-align:center;" ><a style="width:250px; margin:30px auto 10px;color: white" href="" class="white-text">Upload Video</a></h4>
+                    
+
+                    <form method="" class="" style="width:250px; margin:30px auto 10px;">
+                        <div class="form-group">
+                        <input type="text" class="form-control">
+                        </div>
+                        <div class="active-pink-textarea form-group">
+                         <textarea type="text" class="md-textarea form-control " rows="3" cols="4" placeholder="comment"></textarea>
+                        </div>
+                        <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search" aria-describedby="sizing-addon1">
+                        </div>
+                    </form>
+
+                    <div class=" bold d-block " style="width:250px; margin:20px auto 10px;">
+                            <a href="">Help</a>
+                           <a href="">Faq</a>
+                           <a href="">Abuse</a>
+                           <a href="">Legal</a>
+                           <a href="">Policy</a>
+                        </div>
+                    <hr>
+                    <div class="btn-group btn-group-sm">
+                        <button type="button" class="btn btn-primary">Profile</button>
+                        <button type="button" class="btn btn-primary">Views</button>
+                        <button type="button" class="btn btn-primary">Country</button>
+                        <button type="button" class="btn btn-primary">Cultures</button>
+                    </div>
+                    <div class="btn-group btn-group-sm">
+                        <button type="button" class="btn btn-primary">Views</button>
+                        <button type="button" class="btn btn-primary">Related videos</button>
+                    </div>
+                        
+                </div>
+    </div>
+
+<div class="col-md-2" style="display:none;" id="arrow">
+<a> <img src="assets/img/arrow.jpg" style="padding: 50px 50px; width:150px; height:150px;"></a>
+</div>    
+
+
+    <!--Main layout-->
+    <main class="col-md-9 dashboard">
+
+        <div class="container-fluid">
+            <div class="row">
+                        <nav class="navbar navbar-default navbar-static-top dashboard-nav" style="margin: 30px auto;" >
+                            
+                                  <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="background-color:white;">
+                                      <span class="icon-bar"></span>
+                                      <span class="icon-bar"></span>
+                                      <span class="icon-bar"></span>
+                                    </button>
+                                  </div>
+                                  <div class="collapse navbar-collapse" id="myNavbar">
+                                          <ul class=" nav navbar-nav";>
+                                                  <li class="nav-item">
+                                                      <a class="nav-link waves-effect bold blue__text" href="" target="_blank" style="color:blue;">US</a>
+                                                  </li>
+                                                  <li class="nav-item">
+                                                      <a class="nav-link waves-effect  bold blue__text" href="" target="_blank" style="color:blue;">Canada</a>
+                                                  </li>
+                                                  <li class="nav-item">
+                                                      <a class="nav-link waves-effect  bold blue__text" href="" target="_blank" style="color:blue;">Europe</a>
+                                                  </li>
+                                                  <li class="nav-item">
+                                                          <a class="nav-link waves-effect  bold blue__text" href="" target="_blank" style="color:blue;">Asia/pacific/Middle-East</a>
+                                                  </li>
+                          
+                                                  <li class="nav-item">
+                                                          <a class="nav-link waves-effect  bold blue__text" href="" target="_blank" style="color:blue;" >Oceania</a>
+                                                  </li>
+                          
+                                                  <li class="nav-item">
+                                                          <a class="nav-link waves-effect bold blue__text" href="" target="_blank" style="color:blue;">Latin America</a>
+                                                  </li>
+                          
+                                                  <li class="nav-item">
+                                                          <a class="nav-link waves-effect  bold blue__text" href="" target="_blank" style="color:blue;">Africa</a>
+                                                  </li>
+                          
+                                          </ul>
+                                  </div>
+                      </nav>
+                </div>
+        </div>  
+
+            <div class="text-center mb-4 animated slideInDown"> <h3>Welcome <b class="text-success" >Memphis Tunde Amin</b></h3> </div>
+            <section class=" col-md-10 offset-1 wow fadeIn world animated slideInUp" id="mapid" style="height:450px; width:100%;  box-shadow: 4px 5px 8px grey; margin-bottom: 20px;">
+
+            </section>
+
+            <section class="market__fund">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <h4 class="heading_video">Trending</h4>
+                            <!-- <div class="col-md-4"></div> -->
+                            <div class="col-md-2">
+                                <div class="well">
+                                    <div class="img-center padd_up">
+                                        <img src="img/tiv.JPG" alt="" class="img-responsive">
+                                    </div>
+                                    <h3>American Got Talent Winner Shimlly With Jimmy...</h3>
+                                    <p>Marc Anthony</p>
+                                    <p>4.3M Views . 1 Day Ago</p>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="well">
+                                    <div class="img-center padd_up">
+                                        <img src="img/pug-tilt-960x540.jpg" alt="" class="img-responsive">
+                                    </div>
+                                    <h3>American Got Talent Winner Shimlly With Jimmy...</h3>
+                                    <p>Marc Anthony</p>
+                                    <p>4.3M Views . 1 Day Ago</p>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="well">
+                                    <div class="img-center padd_up">
+                                        <img src="img/sample.jpg" alt="" class="img-responsive">
+                                    </div>
+                                    <h3>American Got Talent Winner Shimlly With Jimmy...</h3>
+                                    <p>Marc Anthony</p>
+                                    <p>4.3M Views . 1 Day Ago</p>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="well">
+                                    <div class="img-center padd_up">
+                                        <img src="assets/img/pug-tilt-960x540.jpg" alt="" class="img-responsive">
+                                    </div>
+                                    <h3>American Got Talent Winner Shimlly With Jimmy...</h3>
+                                    <p>Marc Anthony</p>
+                                    <p>4.3M Views . 1 Day Ago</p>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="well">
+                                    <div class="img-center padd_up">
+                                        <img src="img/sample.jpg" alt="" class="img-responsive">
+                                    </div>
+                                    <h3>American Got Talent Winner Shimlly With Jimmy...</h3>
+                                    <p>Marc Anthony</p>
+                                    <p>4.3M Views . 1 Day Ago</p>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="well">
+                                    <div class="img-center padd_up">
+                                        <img src="img/pug-tilt-960x540.jpg" alt="" class="img-responsive">
+                                    </div>
+                                    <h3>American Got Talent Winner Shimlly With Jimmy...</h3>
+                                    <p>Marc Anthony</p>
+                                    <p>4.3M Views . 1 Day Ago</p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <h4 class="heading_video">Prank - Topics <small>Recommended For You</small> <button class="btn btn-danger">SUBSCRIBE 1.4M</button></h4><br>
+                            <!-- <div class="col-md-4"></div> -->
+                            <div class="col-md-2">
+                                <div class="well">
+                                    <div class="img-center padd_up">
+                                        <img src="assets/img/pug-tilt-960x540.jpg" alt="" class="img-responsive">
+                                    </div>
+                                    <h3>American Got Talent Winner Shimlly With Jimmy...</h3>
+                                    <p>Marc Anthony</p>
+                                    <p>4.3M Views . 1 Day Ago</p>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="well">
+                                    <div class="img-center padd_up">
+                                        <img src="img/murmuye.JPG" alt="" class="img-responsive">
+                                    </div>
+                                    <h3>American Got Talent Winner Shimlly With Jimmy...</h3>
+                                    <p>Marc Anthony</p>
+                                    <p>4.3M Views . 1 Day Ago</p>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="well">
+                                    <div class="img-center padd_up">
+                                        <img src="assets/img/pug-tilt-960x540.jpg" alt="" class="img-responsive">
+                                    </div>
+                                    <h3>American Got Talent Winner Shimlly With Jimmy...</h3>
+                                    <p>Marc Anthony</p>
+                                    <p>4.3M Views . 1 Day Ago</p>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="well">
+                                    <div class="img-center padd_up">
+                                        <img src="assets/img/pug-tilt-960x540.jpg" alt="" class="img-responsive">
+                                    </div>
+                                    <h3>American Got Talent Winner Shimlly With Jimmy...</h3>
+                                    <p>Marc Anthony</p>
+                                    <p>4.3M Views . 1 Day Ago</p>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="well">
+                                    <div class="img-center padd_up">
+                                        <img src="assets/img/pug-tilt-960x540.jpg" alt="" class="img-responsive">
+                                    </div>
+                                    <h3>American Got Talent Winner Shimlly With Jimmy...</h3>
+                                    <p>Marc Anthony</p>
+                                    <p>4.3M Views . 1 Day Ago</p>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="well">
+                                    <div class="img-center padd_up">
+                                        <img src="assets/img/pug-tilt-960x540.jpg" alt="" class="img-responsive">
+                                    </div>
+                                    <h3>American Got Talent Winner Shimlly With Jimmy...</h3>
+                                    <p>Marc Anthony</p>
+                                    <p>4.3M Views . 1 Day Ago</p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <h4 class="heading_video">Recipies - Topics <small>Recommended For You</small> <button class="btn btn-danger">SUBSCRIBE 1.4M</button></h4><br>
+                            <!-- <div class="col-md-4"></div> -->
+                            <div class="col-md-2">
+                                <div class="well">
+                                    <div class="img-center padd_up">
+                                        <img src="assets/img/pug-tilt-960x540.jpg" alt="" class="img-responsive">
+                                    </div>
+                                    <h3>American Got Talent Winner Shimlly With Jimmy...</h3>
+                                    <p>Marc Anthony</p>
+                                    <p>4.3M Views . 1 Day Ago</p>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="well">
+                                    <div class="img-center padd_up">
+                                        <img src="assets/img/pug-tilt-960x540.jpg" alt="" class="img-responsive">
+                                    </div>
+                                    <h3>American Got Talent Winner Shimlly With Jimmy...</h3>
+                                    <p>Marc Anthony</p>
+                                    <p>4.3M Views . 1 Day Ago</p>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="well">
+                                    <div class="img-center padd_up">
+                                        <img src="assets/img/pug-tilt-960x540.jpg" alt="" class="img-responsive">
+                                    </div>
+                                    <h3>American Got Talent Winner Shimlly With Jimmy...</h3>
+                                    <p>Marc Anthony</p>
+                                    <p>4.3M Views . 1 Day Ago</p>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="well">
+                                    <div class="img-center padd_up">
+                                        <img src="assets/img/pug-tilt-960x540.jpg" alt="" class="img-responsive">
+                                    </div>
+                                    <h3>American Got Talent Winner Shimlly With Jimmy...</h3>
+                                    <p>Marc Anthony</p>
+                                    <p>4.3M Views . 1 Day Ago</p>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="well">
+                                    <div class="img-center padd_up">
+                                        <img src="assets/img/pug-tilt-960x540.jpg" alt="" class="img-responsive">
+                                    </div>
+                                    <h3>American Got Talent Winner Shimlly With Jimmy...</h3>
+                                    <p>Marc Anthony</p>
+                                    <p>4.3M Views . 1 Day Ago</p>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="well">
+                                    <div class="img-center padd_up">
+                                        <img src="assets/img/pug-tilt-960x540.jpg" alt="" class="img-responsive">
+                                    </div>
+                                    <h3>American Got Talent Winner Shimlly With Jimmy...</h3>
+                                    <p>Marc Anthony</p>
+                                    <p>4.3M Views . 1 Day Ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>   
+
+
+    </main>
+<!--Main layout-->
+</div>
+</div>
+    
+
+    <!--Footer-->
+<footer class="page-footer text-center font-small mdb-color darken-2 mt-4 wow fadeIn blue bg-primary" style="padding-bottom:20px;">
+
+    <!--Call to action-->
+    <div class="pt-4">
+        <a class="btn btn-outline-white" href="" target="_blank" role="button" style="border-color: white; color:white; margin-top:20px;">Download Videos
+            <i class="fa fa-download ml-2"></i>
+        </a>
+        <a class="btn btn-outline-white" href="" target="_blank" role="button" style="border-color: white; color:white; margin-top:20px;">Start Streaming
+            <i class="fa fa-graduation-cap ml-2"></i>
+        </a>
+    </div>
+    <!--/.Call to action-->
+
+    <hr class="my-4">
+
+    <!-- Social icons -->
+    <div class="pb-4">
+        <a href="" target="_blank" style="color:white; margin-left: 20px;">
+            <i class="fa fa-facebook mr-3 "></i>
+        </a>
+
+        <a href="" target="_blank" style="color:white; margin-left: 20px;">
+            <i class="fa fa-twitter mr-3" ></i>
+        </a>
+
+        <a href="" target="_blank" style="color:white; margin-left: 20px;">
+            <i class="fa fa-youtube mr-3 "></i>
+        </a>
+
+        <a href="" target="_blank" style="color:white; margin-left: 20px;">
+            <i class="fa fa-google-plus mr-3 "></i>
+        </a>
+
+        <a href="" target="_blank" style="color:white; margin-left: 20px;">
+            <i class="fa fa-dribbble mr-3 "></i>
+        </a>
+
+        <a href="" target="_blank" style="color:white; margin-left: 20px;">
+            <i class="fa fa-pinterest mr-3"></i>
+        </a>
+
+        <a href="" target="_blank" style="color:white; margin-left: 20px;">
+            <i class="fa fa-github mr-3"></i>
+        </a>
+
+        <a href="/" target="_blank">
+            <i class="fa fa-codepen mr-3 footer__icons"></i>
+        </a>
+    </div>
+    <!-- Social icons -->
+
+    <!--Copyright-->
+    <div class="footer-copyright py-3" style="color:white; margin-top: 20px;">
+        © 2018 Copyright:
+        <a href="https://iyanu.io" target="_blank" style="color:white; margin-left: 5px;"> Iyanu.io </a>
+    </div>
+    <!--/.Copyright-->
+
+</footer>
+    <!--/.Footer-->
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="asste/js/bootstrap.min.js"></script>
+    <script src="js/leaflet.js"></script>
+    <!-- Initializations -->
+    <script type="text/javascript">
+        // Animations initialization
+        new WOW().init();
+    </script>
+
+<script type="text/javascript" src="js/custom.js"></script>
+
+</body>
+
+</html>
