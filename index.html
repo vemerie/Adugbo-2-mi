@@ -11,19 +11,27 @@
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <!-- Your custom styles (optional) -->
-    <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/leaflet.css" />
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- leaflet style-->
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css"/>
+    <link rel="stylesheet" href="assets/css/leaflet.css" />
+   <!-- <link rel="stylesheet" href="http://k4r573n.github.io/leaflet-control-osm-geocoder/Control.OSMGeocoder.css"/>-->
+    <link rel="stylesheet" href="leaflet-control-osm-geocoder-master/Control.OSMGeocoder.css"/>
+    <!--aws sdk-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.7.16.min.js"></script>
 
 
 </head>
 
-<body onload="showmap()" class="body__allTask">
+<body class="body__allTask">
 
     <!--Main Navigation-->
     <header>
-        <div class="container" style="text-align:center;">
+        <div class"container" style="text-align:center;">
              <a href="index.html" target="_blank">
-                <img src="img/sefa.PNG">
+                <img src="assets/img/sefa.PNG">
             </a>
          </div>
 		<nav class="navbar navbar-default navbar-static-top" >
@@ -99,12 +107,12 @@
                         </div>
                     </nav>       
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-1">
                     <div class="dropleft">
                         <button type="button" class="btn btn-lg btn-danger dropdown-toggle"  id="icon-show-map-video"  href="" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false"style="box-shadow: 4px 5px 8px grey; border-radius:5px; "><i class="fa fa-th-list pr-2" aria-hidden="true" style="margin-right: 5px; color:#fda"></i>More
+                        aria-expanded="false"style="box-shadow: 4px 5px 8px grey; border-radius:5px;"><i class="fa fa-th-list pr-2" aria-hidden="true" style="margin-right: 5px;";></i>More
                         </button>
-                            <ul class="dropdown-menu role="menu" aria-labelledby="dropdownMenu1" subside" style="width:310px; margin-top:15px; margin-right:5px;" >
+                            <ul class="dropdown-menu role="menu" aria-labelledby="dropdownMenu1" subside" style="width:310px; margin-top:15px;">
                                 <li> <a class=" bolds" id="showVideo" href="#"><i class="fa fa-lg fa-video-camera blue-text ml-3 pr-3 small-icons"></i>Video Collection</a></li>
                                 <li><a class="bolds " href="#" id="showMap"><i class="fa fa-lg fa-map blue-text ml-3 pr-3 small-icons"></i>Map View</a></li>
                                 <li class="divider bg-green green-text"></li>
@@ -128,12 +136,26 @@
     <!--Main layout-->
     <main class="mt-1 pt-1 home">
         <div class="container-fluid">
+            <div class="row ">
+                <div id="textarea"></div>
+                <div id="user"></div>
 
+                <div id="mapid">
             <!--Section: Jumbotron-->
-            <section class=" col-md-12 wow fadeIn world" id="mapid" style="height:400px; width:100%;  box-shadow: -4px -5px 8px grey; margin-bottom: 20px;">
+            <div class=" col-md-8 wow fadeIn world" id="map" style=" margin:20px; margin-top:0px;height:400px;  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.14), 0 3px 9px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2)">
 
-            </section>
-            
+            </div>
+                <div class="col-md-3" style="padding:20px; text-align:center; background-color:black; height: 400px;">
+                    <h2 style="color:white;margin-bottom: 20px;">Watch events In these location</h2>
+                    <div style="color:white; padding:10px 10px; padding-bottom: 30px;" id="addressContainer" >
+                        <h2 id="country" style="color:black"></h2>
+                        <h4 id="state" style="color:black"></h4>
+                        <p id="city" style="color:black"></p>
+                        <p class="small" id="coordinate" style="color:red; margin-top: 30px; text-align: right;"></p>
+                    </div>
+                </div>
+                </div>
+            </div>
          </div>
             
          <!--Section: Videos-->
@@ -397,24 +419,37 @@
             © 2018 Copyright:
             <a href="https://iyanu.io" target="_blank" style="color:white; margin-left: 5px;"> Iyanu.io </a>
         </div>
+
+<!--testing block-->
         <!--/.Copyright-->
 
     </footer>
     <!--/.Footer-->
 
     <!-- SCRIPTS -->
+
+
     <!-- JQuery -->
-    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
     <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="assets/js/popper.min.js"></script>
     <!-- Bootstrap core JavaScript -->
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-    
-
  <!-- leaflet -->
- <script src="js/leaflet.js"></script>
- <!-- custom js -->
- <script type="text/javascript" src="js/custom.js"></script>
+    <script src="http://cdn.leafletjs.com/leaflet-0.7/leaflet.js"></script>
+    <script src="assets/js/leaflet.js"></script>
+
+    <!--<script src="http://k4r573n.github.io/leaflet-control-osm-geocoder/Control.OSMGeocoder.js"></script>-->
+    <script src="leaflet-control-osm-geocoder-master/Control.OSMGeocoder.js"></script>
+    <script src="http://leaflet.github.io/Leaflet.heat/dist/leaflet-heat.js"></script>
+    <script src=" Leaflet.heat-gh-pages/dist/leaflet-heat.js"></script>
+    <script src="8973028-6732ac1250e64c7a0fb2929374866b0656d48a7e/2013-earthquake.js"></script>
+    <script src="https://leafletjs.com/examples/choropleth/us-states.js"></script>
+
+    <!-- custom js -->
+    <script type="text/javascript" src="assets/js/map.js"></script>
+    <script type="text/javascript" src="assets/js/custom.js"></script>
 
 
 </body>
