@@ -40,6 +40,16 @@ $(document).ready(function(){
         $('body').css("background-color","black");
        
     });
+        // switch location-selection platform
+        $('#selectionMap').click(function(){
+            $('#locationWrap').css("display","none");
+            $('#mapLocationWrap').fadeIn();
+        });
+
+        $('#selectionForm').click(function(){
+            $('#locationWrap').css("display","block");
+            $('#mapLocationWrap').css("display","none");
+        });
 });
 
 

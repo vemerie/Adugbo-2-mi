@@ -3,7 +3,6 @@
 
 
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -80,7 +79,7 @@
                     </div>
                         
                 </div>
-    </div>
+            </div>
 
 <div class="col-md-2" style="display:none;" id="arrow">
 <a> <img src="assets/img/arrow.jpg" style="padding: 50px 50px; width:150px; height:150px;"></a>
@@ -130,14 +129,72 @@
                           
                                           </ul>
                                   </div>
-                      </nav>
-                </div>
-        </div>  
+                             </nav>
+                        </div>
+                    </div>
 
             <div class="text-center mb-4 animated slideInDown"> <h3>Welcome <b class="text-success" >Memphis Tunde Amin</b></h3> </div>
-            <section class=" col-md-10 offset-1 wow fadeIn world animated slideInUp" id="mapid" style="height:450px; width:100%;  box-shadow: 4px 5px 8px grey; margin-bottom: 20px;">
+    <div class="col-md-12">
+            <div class="col-md-4 locationNavigator" style="background-color: #fef; padding:50px 10px; height:400px;">
+                <div class="col-md-10" style="background-color: #fef; padding:25px 10px;">
+                    <a  href="" target="_blank" class="btn btn-default btn-lg">Default Location</a>
+                </div>
+                <div class="col-md-10" style="background-color: #fef; padding:25px 10px;">
+                    <a class="btn btn-default btn-lg" id="selectionForm">Select your location</a>
+                </div>
+                <div class="col-md-10" style="background-color: #fef; padding:25px 10px;">
+                    <a class="btn btn-default btn-lg" id="selectionMap">select Location using Map</a>
+                </div>
+            </div>
+            <div class="col-md-8" id="mapLocationWrap">
+                <div class=" col-md-8 fadeIn world animated slideInUp" id="map" style="height:400px;  box-shadow: 4px 5px 8px grey; margin-bottom: 20px;">
+                </div>
+                <div class="col-md-4" style="padding:20px; text-align:center; background-color:#00bcd4; height: 400px;">
+                    <h2 style="color:white;margin-bottom: 20px;">Select Event Location</h2>
+                    <div style="color:white; padding:10px 10px; padding-bottom: 30px;" id="addressContainer">
+                        <h2 id="country" style="color:black"></h2>
+                        <h4 id="state" style="color:black"></h4>
+                        <p id="city" style="color:black"></p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <button class="btn btn-success btn-md">Upload</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6" id="locationWrap">
+                <form action="#" role="form" class="form-horizontal" id="location" method="post" accept-charset="utf-8">
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <select name="country" class="form-control countries" id="countryId" required="required">
+                                <option value="">Select Country</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <select name="state" class="form-control states" id="stateId" required="required">
+                                <option value="">Select State</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <select name="city" class="form-control cities" id="cityId" required="required">
+                                <option value="">Select City</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <button class="btn btn-success btn-md">Upload</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
 
-            </section>
+        </div>
 
             <section class="market__fund">
                     <div class="container-fluid">
@@ -147,7 +204,7 @@
                             <div class="col-md-2">
                                 <div class="well">
                                     <div class="img-center padd_up">
-                                        <img src="img/tiv.JPG" alt="" class="img-responsive">
+                                        <img src="assets/img/tiv.JPG" alt="" class="img-responsive">
                                     </div>
                                     <h3>American Got Talent Winner Shimlly With Jimmy...</h3>
                                     <p>Marc Anthony</p>
@@ -157,7 +214,7 @@
                             <div class="col-md-2">
                                 <div class="well">
                                     <div class="img-center padd_up">
-                                        <img src="assets/img/pug-tilt-960x540.jpg" alt="" class="img-responsive">
+                                        <img src="assets/img/sample.jpg" alt="" class="img-responsive">
                                     </div>
                                     <h3>American Got Talent Winner Shimlly With Jimmy...</h3>
                                     <p>Marc Anthony</p>
@@ -406,22 +463,31 @@
 
 </footer>
     <!--/.Footer-->
+<!-- SCRIPTS -->
 
-    <!-- SCRIPTS -->
-    <!-- JQuery -->
-    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="js/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="asste/js/bootstrap.min.js"></script>
-    <script src="js/leaflet.js"></script>
-    <!-- Initializations -->
-    <script type="text/javascript">
-        // Animations initialization
-        new WOW().init();
-    </script>
 
-<script type="text/javascript" src="js/custom.js"></script>
+<!-- JQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="assets/js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<!-- leaflet -->
+<script src="http://cdn.leafletjs.com/leaflet-0.7/leaflet.js"></script>
+<script src="assets/js/leaflet.js"></script>
+
+<!--<script src="http://k4r573n.github.io/leaflet-control-osm-geocoder/Control.OSMGeocoder.js"></script>-->
+<script src="leaflet-control-osm-geocoder-master/Control.OSMGeocoder.js"></script>
+<script src="http://leaflet.github.io/Leaflet.heat/dist/leaflet-heat.js"></script>
+<script src=" Leaflet.heat-gh-pages/dist/leaflet-heat.js"></script>
+<script src="8973028-6732ac1250e64c7a0fb2929374866b0656d48a7e/2013-earthquake.js"></script>
+<script src="https://leafletjs.com/examples/choropleth/us-states.js"></script>
+
+<!-- custom js -->
+<script type="text/javascript" src="assets/js/map.js"></script>
+<script type="text/javascript" src="assets/js/custom.js"></script>
+
 
 </body>
 
